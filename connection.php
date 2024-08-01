@@ -1,0 +1,15 @@
+<?php
+$hostname="localhost";
+$username="root";
+$password="";
+$database="login";
+$port="3307";
+$conn=mysqli_connect($hostname,$username,$password,$database,$port);
+if(!$conn)
+{
+  echo"connected";
+}
+else{
+    echo"";
+}
+?>

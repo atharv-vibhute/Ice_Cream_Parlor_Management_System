@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.header{
+width: 100%;
+height: 100vh;
+background-image: url(img/background_img.png);
+background-size: cover;
+background-position: center;
+}
+.side-nav{
+    width: 110px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px 15px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: 0.5s;
+}
+.admin_info {
+    img{
+        margin-left: 75px;
+        height: 60px;
+        width: 60px;
+       
+ 
+    }
+
+    
+}
+.admin_info h2{
+font-size: 20px;
+font-weight: 600;
+white-space: nowrap;
+margin-left:10px;
+
+cursor: pointer;
+}
+.admin_info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+width: 60px;
+font-size: 12px;
+padding: 10px;
+border-radius: 8px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+}
+ul{
+    list-style: none;
+    padding: 0 15px;
+}
+ul li a{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+   
+}
+ul li img{
+    width: 30px;
+    margin-right: 0px;
+
+}
+ul li p{
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+.side-nav:hover{
+    width: 250px;
+}
+.side-nav:hover .admin_info{
+    display: flex;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+}
+.side-nav:hover .admin_info img{
+    margin-left: 0px;
+}
+.side-nav:hover ul li p{
+    display: block;
+}
+.side-nav:hover ul li img{
+    margin-right: 10px;
+}
+.side-nav:hover ul li a{
+    justify-content: flex-start;
+}
+
+/* product.php page css property */
+.main_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(img/product_back_img.webp);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+/* .header1{
+    display: flex;
+} */
+table {
+    margin-top: 20px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+   
+    th{
+        padding: 10px;
+    }
+}
+ /* add product form */
+
+ .productForm {
+    height: 400px;
+    width: 450px;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 40px black(0, 0, 0, 0.1);
+    z-index: 1000;
+    
+    h2{
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+      table td{
+        color: black;
+        font-size: 18px;
+        line-height: 40px;
+      }  
+    input{
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+       
+    input[type="submit"]{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 22px;
+        margin-top: 27px;
+        
+    }
+}.productForm {
+    height: 400px;
+    width: 450px;
+    padding: 10px;
+    display: block;
+    position: fixed;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 40px black(0, 0, 0, 0.1);
+    z-index: 1000;
+    
+    h2{
+        padding: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+      table td{
+        color: black;
+        font-size: 18px;
+        line-height: 40px;
+      }  
+    input{
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        box-sizing: border-box;
+    }
+       
+    input[type="submit"]{
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 22px;
+        margin-top: 27px;
+        
+    }
+}
+#div_set{
+
+    height: 390px;
+    width: 450px;
+}
+#cancel {
+   
+    position: relative;
+    top: 10px;
+    left: 400px;
+    font-size: 25px;
+    color:black;
+    padding: 4px 9px;
+    cursor: pointer;
+}
+
+/* billing page css */
+.bill_div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(img/bill_back_img.png);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.container {
+    background-color: white;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.invoice {
+    border-collapse: collapse;
+    width: 700px;
+    margin-bottom: 20px;
+}
+.invoice th, .invoice td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.invoice th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+.total {
+    border-top: 2px solid #000;
+    font-weight: bold;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.print-btn {
+    background-color: #008CBA;
+}
+
+
+/* stock page css */
+
+.stock {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.stock th, .stock td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.stock th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
