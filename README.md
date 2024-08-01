@@ -1,0 +1,1 @@
+# This is Ice-Cream Parlor Management System Project.
